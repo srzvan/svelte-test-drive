@@ -1,13 +1,16 @@
 <script>
-  export let name;
+  import Layout from './Layout.svelte'
 </script>
 
-<style>
-  h1 {
-    color: purple;
-    text-decoration: underline;
-    font-size: 16px;
+<style style="scss">
+  :global(html, body) {
+    width: 100%;
+    height: 100%;
+  }
+
+  :global(body) {
+    margin: 0;
   }
 </style>
 
-<h1>Hello {name}!</h1>
+<Layout />
