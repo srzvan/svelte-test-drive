@@ -1,16 +1,21 @@
 <script>
+  import Hero from './Hero.svelte'
   import Sidebar from './Sidebar.svelte'
   import WallpaperGrid from './WallpaperGrid.svelte'
 </script>
 
-<style>
-  section {
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<section class="section">
-  <Sidebar />
-  <WallpaperGrid />
+<Hero />
+<section class="section has-background-dark">
+  <div class="tile is-ancestor">
+    <div class="tile is-2 is-vertical is-parent">
+      <div class="tile is-child">
+        <Sidebar />
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child has-text-centered">
+        <WallpaperGrid />
+      </div>
+    </div>
+  </div>
 </section>
