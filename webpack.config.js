@@ -49,6 +49,8 @@ module.exports = {
           'sass-loader',
         ],
       },
+      // TODO
+      // load images
     ],
   },
   mode,
@@ -59,8 +61,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: require('html-webpack-template'),
-      title: 'svelte-test-drive',
-      links: ['bundle.css'],
+      title: 'Svelte + Electron = 🤯',
     }),
   ],
   devtool: prod ? false : 'source-map',

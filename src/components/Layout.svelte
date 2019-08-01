@@ -4,6 +4,12 @@
   import WallpaperGrid from './WallpaperGrid.svelte'
 </script>
 
+<style type="scss">
+  section .tile.is-ancestor > .tile.is-2 > .tile.is-child:first-child {
+    border-right: 1px solid hsl(48, 100%, 67%);
+  }
+</style>
+
 <Hero />
 <section class="section has-background-dark">
   <div class="tile is-ancestor">
@@ -13,7 +19,7 @@
       </div>
     </div>
     <div class="tile is-parent">
-      <div class="tile is-child has-text-centered">
+      <div class="tile is-child">
         <WallpaperGrid />
       </div>
     </div>

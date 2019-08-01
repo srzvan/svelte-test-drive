@@ -1,5 +1,4 @@
 <style type="scss">
-  .menu-item,
   .menu-item > a {
     color: inherit;
     border-bottom: 1px solid transparent;
