@@ -1,7 +1,7 @@
 <script>
   const imgPaths = [
-    'luis-quintero-TYlR9NGFrPs-unsplash.jpg',
-    'pawel-czerwinski-hNrd99q5peI-unsplash.jpg',
+    './luis-quintero-TYlR9NGFrPs-unsplash.jpg',
+    './pawel-czerwinski-hNrd99q5peI-unsplash.jpg',
   ]
 </script>
 

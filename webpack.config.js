@@ -51,6 +51,17 @@ module.exports = {
       },
       // TODO
       // load images
+      // {
+      //   test: /\.(png|jpe?g|gif|svg|webp)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: 'static/media/[name].[contenthash].[ext]',
+      //       },
+      //     },
+      //   ],
+      // },
     ],
   },
   mode,
