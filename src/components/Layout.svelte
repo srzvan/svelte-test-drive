@@ -2,20 +2,35 @@
   import Hero from './Hero.svelte'
   import Sidebar from './Sidebar.svelte'
   import WallpaperGrid from './WallpaperGrid.svelte'
+  import Footer from './Footer.svelte'
 </script>
 
-<Hero />
-<section class="section has-background-dark">
-  <div class="tile is-ancestor">
-    <div class="tile is-2 is-vertical is-parent">
-      <div class="tile is-child">
-        <Sidebar />
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <div class="tile is-child">
-        <WallpaperGrid />
-      </div>
-    </div>
-  </div>
-</section>
+<style type="scss">
+  @use "../scss/_color-palette" as palette;
+  :global(body) {
+    display: grid;
+    grid-template-rows: 20% 1fr auto;
+    background-color: palette.$light;
+    color: palette.$dark;
+  }
+
+  main {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 100px auto repeat(2, 1fr) 100px;
+  }
+
+  header {
+    background-color: palette.$primary;
+    color: palette.$light;
+  }
+</style>
+
+<header>
+  <Hero />
+</header>
+<main>
+  <Sidebar />
+  <WallpaperGrid />
+</main>
+<Footer />
